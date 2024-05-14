@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="section materia">
+        <h2>Banco de Dados 2</h2>
+        <p>Aprofundamento em sistemas de gestão de banco de dados, modelagem avançada e técnicas de otimização de
+            consultas.</p>
+        <form>
+            <div>1. Qual é o propósito da normalização de dados?<br>
+                <input type="radio" name="q1" value="a"> Aumentar a redundância de dados<br>
+                <input type="radio" name="q1" value="b"> Minimizar a redundância de dados<br>
+                <input type="radio" name="q1" value="c"> Maximizar a velocidade das consultas<br>
+            </div>
+            <div>2. O que são transações em um banco de dados?<br>
+                <input type="radio" name="q2" value="a"> Consultas complexas em múltiplas tabelas<br>
+                <input type="radio" name="q2" value="b"> Um conjunto de operações que formam uma única unidade lógica de
+                trabalho<br>
+                <input type="radio" name="q2" value="c"> Operações de backup realizadas periodicamente<br>
+            </div>
+            <div>3. Qual das seguintes é uma vantagem dos índices em um banco de dados?<br>
+                <input type="radio" name="q3" value="a"> Aumentar o espaço de armazenamento<br>
+                <input type="radio" name="q3" value="b"> Aumentar a complexidade das consultas<br>
+                <input type="radio" name="q3" value="c"> Melhorar a performance das consultas<br>
+            </div>
+            <div>4. O que é SQL Injection?<br>
+                <input type="radio" name="q4" value="a"> Uma técnica para otimizar consultas SQL<br>
+                <input type="radio" name="q4" value="b"> Um tipo de ataque que explora vulnerabilidades na entrada de
+                dados SQL<br>
+                <input type="radio" name="q4" value="c"> Uma metodologia de programação em bancos de dados<br>
+            </div>
+            <div>5. Qual comando SQL é usado para remover linhas de uma tabela?<br>
+                <input type="radio" name="q5" value="a"> DELETE<br>
+                <input type="radio" name="q5" value="b"> REMOVE<br>
+                <input type="radio" name="q5" value="c"> DROP<br>
+            </div>
+            <button type="button" onclick="verificarRespostas('bancoDados')">Finalizar Simulado</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+</body>
+
+</html>

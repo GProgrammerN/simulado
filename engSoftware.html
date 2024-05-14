@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia de Software 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="section materia">
+        <h2>Engenharia de Software 2</h2>
+        <p>Estudo avançado sobre desenvolvimento de software, focando em métodos ágeis, qualidade de software e gestão
+            de projetos de TI.</p>
+        <form>
+            <div>1. O que é Scrum?<br>
+                <input type="radio" name="q1" value="a"> Uma linguagem de programação<br>
+                <input type="radio" name="q1" value="b"> Uma ferramenta de gestão de projetos<br>
+                <input type="radio" name="q1" value="c"> Um framework ágil<br>
+            </div>
+            <div>2. O que define qualidade de software?<br>
+                <input type="radio" name="q2" value="a"> Somente a ausência de erros<br>
+                <input type="radio" name="q2" value="b"> A usabilidade e a conformidade com os requisitos funcionais e
+                não funcionais<br>
+                <input type="radio" name="q2" value="c"> A rapidez no desenvolvimento<br>
+            </div>
+            <div>3. Qual é um princípio do desenvolvimento ágil?<br>
+                <input type="radio" name="q3" value="a"> Planejamento completo antes do início do projeto<br>
+                <input type="radio" name="q3" value="b"> Não permitir mudanças nos requisitos<br>
+                <input type="radio" name="q3" value="c"> Resposta rápida a mudanças<br>
+            </div>
+            <div>4. Qual ferramenta é usada para controle de versão?<br>
+                <input type="radio" name="q4" value="a"> JIRA<br>
+                <input type="radio" name="q4" value="b"> Git<br>
+                <input type="radio" name="q4" value="c"> Slack<br>
+            </div>
+            <div>5. O que é um sprint no Scrum?<br>
+                <input type="radio" name="q5" value="a"> Uma reunião de revisão de software<br>
+                <input type="radio" name="q5" value="b"> Um período fixo durante o qual um conjunto de trabalho deve ser
+                completado e preparado para revisão<br>
+                <input type="radio" name="q5" value="c"> Um tipo de teste de software<br>
+            </div>
+            <button type="button" onclick="verificarRespostas('engSoftware')">Finalizar Simulado</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+</body>
+
+</html>
