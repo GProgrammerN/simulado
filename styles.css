@@ -18,6 +18,15 @@ a {
     border-radius: 4px;
 }
 
+.menu a {
+    background-color: #4c9baf;
+}
+
+.menu a:hover {
+    background-color: #4559a0;
+}
+
+
 a:hover {
     background-color: #45a049;
 }
