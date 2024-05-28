@@ -11,9 +11,9 @@
 <body>
     <div class="menu">
         <a href="#curso">Home</a>
-        <a href="#engSoftware">Engenharia de Software 2</a>
-        <a href="#bancoDados">Banco de Dados 2</a>
-        <a href="#poo">Programação Orientada a Objetos 2</a>
+        <a href="#engSoftware">ES2</a>
+        <a href="#bancoDados">BD2</a>
+        <a href="#poo">POO2</a>
     </div>
 
     <div id="curso" class="section">
@@ -27,7 +27,48 @@
         <img src="img/engSoftware.jpg" alt="Engenharia de Software">
         <p>Estudo avançado sobre desenvolvimento de software, focando em métodos ágeis, qualidade de software e gestão
             de projetos de TI.</p>
-        <a href="/engSoftware.html">Engenharia de Software 2</a>
+        <button onclick="revelarSimulado('engSoftware')">
+            Iniciar Simulado
+        </button>
+        <div class="section materia" id="formEng" hidden>
+            <form>
+                <div>1. O que é Scrum?<br>
+                    <input type="radio" name="qEng1" value="a"> Uma linguagem de programação<br>
+                    <input type="radio" name="qEng1" value="b"> Uma ferramenta de gestão de projetos<br>
+                    <input type="radio" name="qEng1" value="c"> Um framework ágil<br>
+                </div>
+                <div>2. O que define qualidade de software?<br>
+                    <input type="radio" name="qEng2" value="a"> Somente a ausência de erros<br>
+                    <input type="radio" name="qEng2" value="b"> A usabilidade e a conformidade com os requisitos
+                    funcionais
+                    e
+                    não funcionais<br>
+                    <input type="radio" name="qEng2" value="c"> A rapidez no desenvolvimento<br>
+                </div>
+                <div>3. Qual é um princípio do desenvolvimento ágil?<br>
+                    <input type="radio" name="qEng3" value="a"> Planejamento completo antes do início do projeto<br>
+                    <input type="radio" name="qEng3" value="b"> Não permitir mudanças nos requisitos<br>
+                    <input type="radio" name="qEng3" value="c"> Resposta rápida a mudanças<br>
+                </div>
+                <div>4. Qual ferramenta é usada para controle de versão?<br>
+                    <input type="radio" name="qEng4" value="a"> JIRA<br>
+                    <input type="radio" name="qEng4" value="b"> Git<br>
+                    <input type="radio" name="qEng4" value="c"> Slack<br>
+                </div>
+                <div>5. O que é um sprint no Scrum?<br>
+                    <input type="radio" name="qEng5" value="a"> Uma reunião de revisão de software<br>
+                    <input type="radio" name="qEng5" value="b"> Um período fixo durante o qual um conjunto de trabalho
+                    deve
+                    ser
+                    completado e preparado para revisão<br>
+                    <input type="radio" name="qEng5" value="c"> Um tipo de teste de software<br>
+                </div>
+                <button type="button" onclick="verificarRespostas('engSoftware')">Finalizar Simulado</button>
+            </form>
+            <div id="resultadoEng"></div>
+        </div>
+    </div>
+
     </div>
 
     <div id="bancoDados" class="section materia">
@@ -35,17 +76,107 @@
         <img src="img/bancoDados.jpg" alt="Banco de Dados">
         <p>Aprofundamento em sistemas de gestão de banco de dados, modelagem avançada e técnicas de otimização de
             consultas.</p>
-        <a href="/banco_de_dados.html">Banco de Dados 2</a>
+        <button onclick="revelarSimulado('bancoDados')">
+            Iniciar Simulado
+        </button>
+        <div class=" section materia" id="formBD" hidden>
+            <form>
+                <div>1. Qual é o propósito da normalização de dados?<br>
+                    <input type="radio" name="qBD1" value="a"> Aumentar a redundância de dados<br>
+                    <input type="radio" name="qBD1" value="b"> Minimizar a redundância de dados<br>
+                    <input type="radio" name="qBD1" value="c"> Maximizar a velocidade das consultas<br>
+                </div>
+                <div>2. O que são transações em um banco de dados?<br>
+                    <input type="radio" name="qBD2" value="a"> Consultas complexas em múltiplas tabelas<br>
+                    <input type="radio" name="qBD2" value="b"> Um conjunto de operações que formam uma única unidade
+                    lógica de
+                    trabalho<br>
+                    <input type="radio" name="qBD2" value="c"> Operações de backup realizadas periodicamente<br>
+                </div>
+                <div>3. Qual das seguintes é uma vantagem dos índices em um banco de dados?<br>
+                    <input type="radio" name="qBD3" value="a"> Aumentar o espaço de armazenamento<br>
+                    <input type="radio" name="qBD3" value="b"> Aumentar a complexidade das consultas<br>
+                    <input type="radio" name="qBD3" value="c"> Melhorar a performance das consultas<br>
+                </div>
+                <div>4. O que é SQL Injection?<br>
+                    <input type="radio" name="qBD4" value="a"> Uma técnica para otimizar consultas SQL<br>
+                    <input type="radio" name="qBD4" value="b"> Um tipo de ataque que explora vulnerabilidades na entrada
+                    de
+                    dados SQL<br>
+                    <input type="radio" name="qBD4" value="c"> Uma metodologia de programação em bancos de dados<br>
+                </div>
+                <div>5. Qual comando SQL é usado para remover linhas de uma tabela?<br>
+                    <input type="radio" name="qBD5" value="a"> DELETE<br>
+                    <input type="radio" name="qBD5" value="b"> REMOVE<br>
+                    <input type="radio" name="qBD5" value="c"> DROP<br>
+                </div>
+                <button type="button" onclick="verificarRespostas('bancoDados')">Finalizar Simulado</button>
+            </form>
+            <div id="resultadoBD"></div>
+        </div>
     </div>
-
     <div id="poo" class="section materia">
         <h2>Programação Orientada a Objetos 2</h2>
         <img src="img/poo.png" alt="Programação Orientada a Objetos">
-        <p>Continuação do estudo de POO, abordando conceitos avançados como herança, polimorfismo, interfaces e padrões
+        <p>Continuação do estudo de POO, abordando conceitos avançados como herança, polimorfismo, interfaces e
+            padrões
             de projeto.</p>
-        <a href="/poo.html">Programação Orientada a Objetos 2</a>
+        <button onclick="revelarSimulado('poo')">
+            Iniciar Simulado
+        </button>
+        <div class="section materia" id="formPOO" hidden>
+            <form>
+                <div>1. O que é polimorfismo?<br>
+                    <input type="radio" name="qPOO1" value="a"> A capacidade de uma classe derivar de múltiplas
+                    classes
+                    base<br>
+                    <input type="radio" name="qPOO1" value="b"> A capacidade de um método ter várias formas<br>
+                    <input type="radio" name="qPOO1" value="c"> A prática de esconder detalhes internos de
+                    componentes<br>
+                </div>
+                <div>2. O que é uma interface em POO?<br>
+                    <input type="radio" name="qPOO2" value="a"> Um tipo de classe que fornece uma implementação
+                    padrão
+                    de
+                    métodos<br>
+                    <input type="radio" name="qPOO2" value="b"> Um contrato que define conjuntos de métodos sem
+                    implementação<br>
+                    <input type="radio" name="qPOO2" value="c"> Uma ferramenta para desenvolver aplicações
+                    gráficas<br>
+                </div>
+                <div>3. Qual padrão de design é útil para criar uma sequência de objetos de tratamento?<br>
+                    <input type="radio" name="qPOO3" value="a"> Singleton<br>
+                    <input type="radio" name="qPOO3" value="b"> Chain of Responsibility<br>
+                    <input type="radio" name="qPOO3" value="c"> Builder<br>
+                </div>
+                <div>4. Em POO, o que é encapsulamento?<br>
+                    <input type="radio" name="qPOO4" value="a"> A divisão de um programa em múltiplos bancos de
+                    dados<br>
+                    <input type="radio" name="qPOO4" value="b"> A técnica de armazenar dados em arrays<br>
+                    <input type="radio" name="qPOO4" value="c"> O ato de restringir o acesso a componentes de um
+                    objeto<br>
+                </div>
+                <div>5. Qual é o benefício de utilizar herança em POO?<br>
+                    <input type="radio" name="qPOO5" value="a"> Para permitir que diferentes objetos recebam
+                    mensagens
+                    semelhantes<br>
+                    <input type="radio" name="qPOO5" value="b"> Para aumentar a eficiência do código ao reduzir o
+                    uso
+                    de
+                    memória<br>
+                    <input type="radio" name="qPOO5" value="c"> Para reutilizar código e estabelecer uma relação
+                    hierárquica
+                    entre classes<br>
+                </div>
+                <button type="button" onclick="verificarRespostas('poo')">Finalizar Simulado</button>
+                <div id="resultadoPOO"></div>
+            </form>
+        </div>
     </div>
-
+    <div class="section resultadoFinal">
+        <button type="button" onclick="exibirResultadosTotais()">Mostrar Resultado Total</button>
+        <div id="resultado"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 
